@@ -1,0 +1,100 @@
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #cccccc;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    margin-bottom: 30px;
+    background-color: aliceblue;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    
+    &__title{
+        text-align: left;
+        width: 90%;
+    }
+}
+
+.main{
+    padding: 50px 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    &__interface{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    &__tools,
+    &__color-panel{
+        min-height: 200px;
+        padding: 20px;
+        box-shadow: 0 2px 3px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__tool-button{
+        outline: none;
+        border: 0;
+        width: 170px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        img{
+            padding: 0 10px;
+        }
+    }
+
+    &__color-block{
+        width: 15px;
+        height: 15px;
+        margin: 0px 10px;
+        border-radius: 8px;
+    }
+
+    &__canvas-wrapper{
+       
+    }
+}   
+
+
+.lightening{
+    background-color: cadetblue;
+}
+
+.round{
+    border-radius: 50%;
+}
+
+.green-color{
+    background-color: green;
+}
+
+.grey-color{
+    background-color: grey;
+}
+
+.red-color{
+    background-color: red;
+}
+
+.blue-color{
+    background-color: blue;
+}
+
+
+
+
+.canvas{
+    width: 512px;
+    height: 512px;
+    background-color:#cccccc;
+}
