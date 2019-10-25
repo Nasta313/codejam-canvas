@@ -1,5 +1,5 @@
 body{
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     background-color: #cccccc;
     
@@ -21,7 +21,7 @@ body{
 }
 
 .main{
-    padding: 50px 5%;
+    padding: 50px 3%;
     display: flex;
     justify-content: space-between;
     background-color: aliceblue;
@@ -32,7 +32,8 @@ body{
     }
     
     &__tools,
-    &__color-panel{
+    &__color-panel,
+    &__resize-buttons{
         min-height: 200px;
         padding: 20px;
         box-shadow: 0 2px 3px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
@@ -48,8 +49,13 @@ body{
         height: 40px;
         display: flex;
         align-items: center;
+        display: flex;
+        justify-content: space-around;
         img{
             padding: 0 10px;
+        }
+        span{
+            width: 130px;
         }
     }
 
@@ -61,10 +67,24 @@ body{
     }
 
     &__canvas-wrapper{
-       
+        display: flex;
+        justify-content: center;
+        width: 512px;
+        height: 512px;
+        background-color:#cccccc;
+    }
+    .canvas{
+        align-self: center;
+        border: 1px solid black;
+        width: 512px;
+        height: 512px;
+        image-rendering: pixelated;
+    }
+
+    &__resize-buttons{
+        align-self: flex-start;
     }
 }   
-
 
 .lightening{
     background-color: cadetblue;
@@ -88,13 +108,4 @@ body{
 
 .blue-color{
     background-color: blue;
-}
-
-
-
-
-.canvas{
-    width: 512px;
-    height: 512px;
-    background-color:#cccccc;
 }
