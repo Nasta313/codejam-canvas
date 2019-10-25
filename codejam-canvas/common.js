@@ -103,7 +103,7 @@ window.onload = function (){
     canvas.width = 256;
     canvas.height = 256;
     const img = new Image();
-    img.src = 'assets/images/image.png';
+    img.src = 'data/image.png';
     img.onload = function drawI() {
       ctx.drawImage(img, 0, 0);
     };
