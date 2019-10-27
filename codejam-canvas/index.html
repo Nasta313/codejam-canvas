@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codejam Canvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header class="header">
+    <img src="assets/images/Shape.png" alt="hamburger-menu">
+    <h1 class="header__title">CodeJam Canvas</h1>
+    <img src="assets/images/Shap.png" alt="extra-tools">
+</header>
+<main class="main">
+    <div class="main__interface">
+        <div class="main__tools" id="tools">
+            <button class="main__tool-button" id="paint-bucket-tool" >
+                <img src="assets/images/i1.png" alt="paint-bucket-tool">
+                <span>Paint bucket</span>
+            </button> 
+            <button class="main__tool-button" id="color-picker-tool">
+                <img src="assets/images/i2.png" alt="color-picker-tool">
+                <span>Choose color</span>
+            </button>
+            <button class="main__tool-button" id="move-tool">
+                <img src="assets/images/i3.png" alt="move-tool">
+                <span>Move tool</span> 
+            </button>
+            <button class="main__tool-button" id="transform-tool" title="transform-tool">
+                <img src="assets/images/i4.png" alt="transform-tool">
+                <span>Transform tool</span>
+            </button>
+        </div>
+        <div class="main__color-panel" id="pallete">
+            <button class="main__tool-button" id="button-current-color">
+                <div class="main__color-block green-color" id="chosen-color"></div>
+                <span>Current-color</span>
+            </button> 
+            <button class="main__tool-button" id="button-prev-color">
+                <div class="main__color-block grey-color"></div>
+                <span>Prev color</span>
+            </button>
+            <button class="main__tool-button" id="button-red-color">
+                <div class="main__color-block red-color"></div>
+                <span>red</span>
+            </button>
+            <button class="main__tool-button" id="button-blue-color">
+                <div class="main__color-block blue-color"></div>
+                <span>blue</span>
+            </button>
+        </div>
+    </div>
+    <div class="main__canvas-wrapper" id="canvas-area">
+        <canvas class="canvas" width="512" height="512" id="canvas"></canvas>
+    </div>
+    <div class="main__resize-buttons" id="buttons-right">
+        <button class="main__tool-button" id="image-256x256" >256x256 image</button> 
+        <button class="main__tool-button" id="image-4x4">4x4 hsl</button>
+        <button class="main__tool-button" id="image-32x32">32x32 rgba</button>
+    </div>
+</main>
+<script src="common.js"></script>
+</body>
+</html>
